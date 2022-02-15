@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
     }
     private fun decideDinner( ){
-        val random = (0 until menuList.size-1).random()
+        val random = (0 until menuList.size).random() //the last number will be excluded, No out of range exception
         dinnerText.setText(menuList.get(random))
     }
 
