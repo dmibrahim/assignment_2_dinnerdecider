@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         val name = foodNameTxt.text
         if(name.toString().isEmpty()){
-           Toast.makeText(applicationContext,"please enter a name",Toast.LENGTH_LONG).show()
+           Toast.makeText(applicationContext,"please enter a new food name",Toast.LENGTH_LONG).show()
             foodNameTxt.requestFocus()
         }
         else{
